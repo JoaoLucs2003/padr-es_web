@@ -1,0 +1,53 @@
+/*regras gerais*/
+
+body{
+    background-color: #000;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/*barra de navegação*/
+
+header .main-title{
+    background-color: darkblue;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
+}
+
+/*seção principal*/
+
+main section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section .text-p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+main section button{
+    background-color: darkblue;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 42%;
+    font-size: 30px;
+}
+
+
+/*rodape*/
+footer{
+    position: relative;
+    bottom: 0;
+    padding: 30px;
+}
+footer p{
+    text-align: center;
+}
