@@ -1,0 +1,73 @@
+/*regras gerais*/
+body{
+    background-color: #000;
+    color: #f0f0f0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/*cabeçalho*/
+header h1{
+    text-align: center;
+    color: whitesmoke;
+    background-color: darkblue;
+    padding: 20px;
+}
+header nav{
+    width: 100%;
+    text-align: center;
+}
+header nav a{
+    text-decoration: none;
+    padding: 8px;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+/*página principal*/
+main section img{
+    padding-top: 35px;
+    display: flexbox;
+    margin-left: 33%;
+    
+}
+main section fieldset{
+    width: 30%;
+    margin-left: 34%;
+    border-color: darkblue;
+}
+main section fieldset form{
+    color: whitesmoke;
+}
+
+section fieldset form input{
+    color: black;
+}
+main section p{
+    text-align: center;
+    font-size: 15px;
+}
+main section p span{
+    padding: 45px;
+}
+#text{
+    padding: 20px;
+    font-size: 50px;
+}
+#results{
+    color: whitesmoke;
+    padding-top: 20px;
+    font-size: 55px;
+}
+/*rodapé*/
+footer{
+    position: absolute;
+    padding: 3px;
+    bottom: 0;
+    width: 99%;
+    background-color: darkblue;
+}
+footer p{
+    text-align: center;
+    color: whitesmoke;
+}

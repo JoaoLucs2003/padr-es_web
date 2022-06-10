@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1>AppendChild</h1>
+        <nav>
+            <a href="principal.html">Início</a>
+            <a href="imc.html">Cálculo IMC</a>
+        </nav>
+    </header>
+    <br>
+    <br>
+  <main>
+
+    <section>
+
+        <fieldset>
+            <form action="">
+            <label for="text">adicione itens na sua lista: </label>
+            <input type="text" name="text" id="text"> <br>
+            <label for=""> Escolha a cor do item: </label>
+            
+            <p style="color: green">
+                verde<input id="green" value="green" type="radio" name="colorc" class="colorc"> 
+            </p>
+            
+            <p style="color: yellow">
+                amarelo<input id="blue" value="blue" type="radio" name="colorc" class="colorc"> 
+            </p>
+            
+            <p style="color: red">
+                vermelho<input id="orange" value="orange" type="radio" name="colorc" class="colorc">
+            </p>
+
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>lista:</legend>
+            <form action="">
+                <ul id="myList">
+                    
+                </ul>
+            </form>
+
+            <button id="button">Append</button>
+        </fieldset>
+
+        <br>
+        <br>
+
+    </section>
+    </main>
+    <script>
+      document.getElementById("button").addEventListener("click", myFunction);
+
+      function changeColor(node){
+        
+        let color = document.querySelector('input[name="colorc"]:checked').value;
+        alert(color) 
+
+        if (color == 'green'){
+            node.style.color = 'green'
+        }else if(color == 'blue'){
+            node.style.color = 'blue'
+        }else if(color == 'orange'){
+            node.style.color = 'orange'
+        }else {
+            alert('No selected color')
+        }
+
+      }
+
+      function myFunction() {
+        
+        const node = document.createElement("li");
+        let text = document.getElementById("text").value;
+
+        const textnode = document.createTextNode(text);
+
+        node.appendChild(textnode);
+
+        changeColor(node)
+
+        document.getElementById("myList").appendChild(node);
+      }
+    </script>
+    <footer>
+        <p>João Lucas de Oliveira Guedes</p>
+    </footer>
+    <script src="j-list.js"> </script>
+  </body>
+</html>
